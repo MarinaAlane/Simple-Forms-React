@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-const states = ['Rio de Janeiro', 'Minas Gerais', 'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
+const states = ['Acre',
+'Alagoas', 'Amapá','Amazonas','Bahia','Ceará', 'Distrito Federal', 'Espírito Santo','Goiás',
+'Maranhão','Mato Grosso','Mato Grosso do Sul','Minas Gerais ','Pará','Paraíba', 'Paraná',
+'Piauí','Rio de Janeiro ','Rio Grande do Norte','Rio Grande do Sul','Rondônia','Roraima',
+'Santa Catarina','São Paulo','Sergipe','Tocantins' ];
 
 class PersonalForm extends Component {
   render() {

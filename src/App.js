@@ -27,18 +27,14 @@ class App extends Component {
 
   changeHandler = event => {
     let { name, value } = event.target;
-
     if (name === 'name') value = value.toUpperCase();
     if (name === 'address') value = this.validateAddress(value);
-
     this.updateState(name, value);
   }
 
   onBlurHandler = event => {
     let { name, value } = event.target;
-
     if (name === 'city') value = value.match(/^\d/) ? '' : value;
-
     this.updateState(name, value);
   }
 
@@ -68,14 +64,11 @@ class App extends Component {
     }
     return '';
   }
-
   resetForm = () => { this.setState(INITIAL_STATE) };
-
   sendForm = () => { this.setState({ submitted: true }) };
 
   render() {
     const { submitted } = this.state;
-
     return (
       <main>
         <Form
